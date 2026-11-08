@@ -20,6 +20,15 @@ from research import research_company_and_role
 
 load_dotenv()
 
+# Streamlit Community Cloud stores deployment credentials in st.secrets.
+# Keep environment variables (including local .env values) as the first choice.
+try:
+    _parallel_secret = st.secrets["PARALLEL_API_KEY"]
+except (KeyError, FileNotFoundError):
+    pass
+else:
+    os.environ.setdefault("PARALLEL_API_KEY", str(_parallel_secret))
+
 st.set_page_config(
     page_title="AI Interview Coach",
     page_icon="🎯",
