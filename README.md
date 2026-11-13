@@ -1,11 +1,10 @@
 # AI Interview Coach Agent
 
-A Streamlit app for resume and job-description analysis, tailored interview questions,
+A Streamlit app for resume and job-description analysis, tailored interview questions, answer evaluation, a practice-readiness report, and company research.
 
 **Live app:** https://ai-interview-coach-agent-9w644sdvgt2pr9pfd582tw.streamlit.app/
-answer evaluation, a practice-readiness report, and company research. Parallel provides
-the language-model responses through its OpenAI-compatible Responses API; LangGraph
-orchestrates the role-analysis workflow. SQLite stores session history locally.
+
+Parallel provides the language-model responses through its OpenAI-compatible Responses API; LangGraph orchestrates the role-analysis workflow. SQLite stores session history locally.
 
 ## Requirements
 - Python 3.10+
@@ -37,8 +36,7 @@ In the app's **Settings → Secrets**, add:
 PARALLEL_API_KEY = "your_parallel_api_key"
 PARALLEL_MODEL = "parallel"
 ```
-The model setting is optional; the application defaults to `parallel`. Keep secrets in
-Streamlit's secret settings or your local `.env`; never commit a real key.
+The model setting is optional; the application defaults to `parallel`. Keep secrets in Streamlit's secret settings or your local `.env`; never commit a real key.
 
 ## Use
 1. Paste your resume text and the target job description.
