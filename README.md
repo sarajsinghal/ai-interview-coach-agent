@@ -1,6 +1,8 @@
-# AI Interview Coach Agent — MVP
+# AI Interview Coach Agent
 
 A Streamlit app for resume and job-description analysis, tailored interview questions,
+
+**Live app:** https://ai-interview-coach-agent-9w644sdvgt2pr9pfd582tw.streamlit.app/
 answer evaluation, a practice-readiness report, and company research. Parallel provides
 the language-model responses through its OpenAI-compatible Responses API; LangGraph
 orchestrates the role-analysis workflow. SQLite stores session history locally.
